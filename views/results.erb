@@ -1,0 +1,6 @@
+<h1>Results!</h1>
+<%= erb :form, :layout=>false %>      <br/> 
+<%for item in @results %>
+	<%= item.artist %> - <%= item.title %><br/> <a href="<%= item.file %>"><%= item.file %></a> <br/>     <br/>
+<%end%>
+<br/>
